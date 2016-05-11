@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AudioRecord parameters -->
+    <integer name = "sample_rate">8000</integer>
+    <integer name = "num_channels">1</integer>
+
+    <!-- Defines the buffer length for sound detection -->
+    <integer name = "detect_buffer_length">256</integer>
+    <!-- Defines the capture time after impulse is detected -->
+    <integer name = "capture_time">5</integer>
+
+    <!-- Number of sounds we want to record -->
+    <integer name = "num_impulses">2</integer>
+    <integer name = "samples_per_bin">32</integer>
+    <!--<integer name = "num_tgbn">1</integer> -->
+    <integer name = "number_impulses_frequencies_scratch">0</integer>
+
+    <!-- Threshold at which we detect a sound above back-ground and at which we detect a TGBN sound -->
+    <integer name = "detect_threshold">0</integer>
+    <integer name = "detect_threshold_tgbn_sound">25000</integer>
+
+    <!-- SPOILER ALERT – Needed in Article 4-->
+    <integer name = "samples_per_bin_freq">32</integer>
+    <integer name = "samples_per_bin_time">4</integer>
+    <integer name = "playChirp">0</integer>
+    <integer name = "averageOverDenominator">1</integer>
+
+</resources>

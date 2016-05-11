@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Sound Recording and Analysis - Aug 2015</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_sqlite_database_contract">MySQLiteDatabaseContract</string>
+    <string name="title_activity_my_sqlite_database_helper">MySQLiteDatabaseHelper</string>
+    <string name="title_activity_fftbase">FFTbase</string>
+    <string name="title_activity_start_dsp">Record new data and analyse</string>
+    <string name="title_activity_display_histogram">Display Histogram</string>
+    <string name="title_activity_pick_history">PickHistory</string>
+    <string name="title_activity_display_graph">DisplayGraph</string>
+    <string name ="title_activity_start_app">Sound Recording and Analysis - Aug 2015</string>
+    <string name="title_activity_terms_and_conditions">Terms And Conditions</string>
+
+    <string name="error">An error has occurred</string>
+    <string name="computation_error">A computation error in FFT has occurred</string>
+    <string name="recorder_init_fail">Recording device initialization failed</string>
+    <string name="remaining_impulse_leadtext">Number of Impulses remaining: </string>
+    <string name="start_dsp">Record new data</string>
+    <string name ="graph_FFT">View Frequency graphs</string>
+    <string name ="graph_histogram">View Analysis Results</string>
+    <string name ="view_fft_result">View Frequency Graph</string>
+    <string name ="view_analysis_result">View Analysis Results</string>
+    <string name ="empty_list">No frequencies to be plotted</string>
+
+    <string name="deleted_database">All Entries Deleted</string>
+    <string name="no_entries">No Data Entries</string>
+    <string name="delete_entry_string">Delete Entry</string>
+
+    <!-- menu bar strings -->
+    <string name="delete_database_string">Delete All Entries</string>
+    <string name="about">About</string>
+    <string name="history">History</string>
+    <string name="about_hist">Percentage worse case frequencies shows the most prominent frequencies
+        in a recording. Ratio background noise frequencies shows the frequencies which are signficantly
+    greater than the background noise level but lesser than percentage worse case frequencies. These are the frequencies recorded when
+    there is a lot of background noise along with the hum, for example, during daytime.</string>
+    <string name="about_fft">X axis : Frequency in Hz, Y axis : Magnitude. A sharp peak at a particular frequency means that the
+    signal is of that frequency.</string>
+
+    <string name="audio_play">Generate Chirp</string>
+    <string name ="consentText1">I understand and accept</string>
+    <string name ="TermsAndConditions">TERMS AND CONDITIONS</string>
+    <string name ="consentText2">for using this application</string>
+
+    <string name="allTheTerms"><b><u>TERMS AND CONDITIONS</u></b>\r\n\n This application was developed using internet tutorials,
+           code snippets and libraries for
+           screen generation, button pressing, audio capture and playback, data storage, data analysis and
+           graphics display amongst other things\r\n\n
+
+           We have read and understood the internet tutorials, code snippets and libraries to the extent
+           that we have allowed the application to run on our own cell-phones!\r\n\n
+
+           Other than making these comments\r\n <b><u> we supply the application AS-IS with no warranty of
+           its suitability for any purpose\r\n\n</u></b>
+
+           <b><u>The user accepts all responsibility for the use of this application and for the use of any data
+           captured by this application</u></b>
+           </string>
+
+</resources>
+
+

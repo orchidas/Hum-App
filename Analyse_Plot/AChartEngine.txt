@@ -1,0 +1,65 @@
+/*XYSeries current = new XYSeries(currentDate);
+        XYSeries selected = new XYSeries(selectedDate);
+
+        //Adding data to series
+        for(n =0; n<countXvals.length -1 ; n++){
+            current.add((countXvals[n] + countXvals[n+1])/2, countYvalsCurrent[n]);
+            selected.add((countXvals[n] + countXvals[n+1])/2, countYvalsSelected[n]);
+        }
+
+        //Creating datasets to hold each series
+        XYMultipleSeriesDataset dataset = new XYMultipleSeriesDataset();
+        dataset.addSeries(current);
+        dataset.addSeries(selected);
+
+        //Creating XYSeriesRenderer to customize current
+        XYSeriesRenderer currentRenderer = new XYSeriesRenderer();
+        currentRenderer.setColor(Color.rgb(130, 130, 230));
+        currentRenderer.setFillPoints(true);
+        currentRenderer.setLineWidth(2);
+
+
+        //Creating XYSeriesRenderer to customize selected
+        XYSeriesRenderer selectedRenderer = new XYSeriesRenderer();
+        selectedRenderer.setColor(Color.rgb(220, 80, 80));
+        selectedRenderer.setFillPoints(true);
+        selectedRenderer.setLineWidth(2);
+
+
+        // Creating a XYMultipleSeriesRenderer to customize the whole chart
+        XYMultipleSeriesRenderer multiRenderer = new XYMultipleSeriesRenderer();
+        //multiRenderer.setXLabels(0);
+        multiRenderer.setChartTitle(GraphTitle);
+        multiRenderer.setChartTitleTextSize(18);
+        multiRenderer.setXTitle("Frequency interval of 10Hz");
+        multiRenderer.setYTitle("Number of occurrences");
+        //yaxis labels to the left of margin
+        multiRenderer.setYLabelsAlign(Paint.Align.RIGHT);
+        multiRenderer.setLabelsTextSize(18);
+        multiRenderer.setAxisTitleTextSize(16);
+        //adjusting margin values to fit all the axis titles and legends
+        multiRenderer.setMargins(new int[]{30, 40, 30, 20});
+        multiRenderer.setLegendTextSize(16);
+        multiRenderer.setShowGridX(true);
+        multiRenderer.setGridColor(Color.GRAY);
+        multiRenderer.setZoomButtonsVisible(true);
+        multiRenderer.setBarSpacing(0.2);
+        //setting x-axis labels
+        multiRenderer.setXLabels(0);
+        //set range from 20Hz to 200Hz
+        //multiRenderer.setXAxisMin(20);
+        //multiRenderer.setXAxisMax(200);
+        for(n =0; n <countYvalsCurrent.length;n += 2)
+        //for(n =0; n <10; n++)
+            //multiRenderer.addXTextLabel(20*(n+1), Integer.toString(20 *(n+1)));
+            multiRenderer.addXTextLabel(countXvals[n],Integer.toString((countXvals[n] + countXvals[n+1])/2));
+
+
+        //Adding current and selected to multipleRenderer
+        multiRenderer.addSeriesRenderer(currentRenderer);
+        multiRenderer.addSeriesRenderer(selectedRenderer);
+
+        //creating intent to plot bar chart
+        Intent intent = ChartFactory.getBarChartIntent(getBaseContext(), dataset, multiRenderer, Type.DEFAULT);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        startActivity(intent);*/

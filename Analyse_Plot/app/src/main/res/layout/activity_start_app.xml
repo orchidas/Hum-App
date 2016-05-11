@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id= "@+id/container"
+    android:background = "@drawable/sound_wave"
+    android:layout_width ="fill_parent"
+    android:layout_height ="fill_parent"
+    tools:context="com.gpa.MainActivity">
+
+    <Button
+        android:id="@+id/btnStartDSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "40dp"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_dsp"
+        android:onClick="StartDSP"/>
+
+    <Button
+        android:id="@+id/graph_FFT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartDSP"
+        android:layout_centerHorizontal="true"
+        android:text="@string/graph_FFT"
+        android:onClick="gotoGraphFFT" />
+
+
+    <Button
+        android:id="@+id/graph_histogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph_FFT"
+        android:layout_centerHorizontal="true"
+        android:text="@string/graph_histogram"
+        android:onClick="gotoHistogram" />
+
+    <TextView
+        android:id = "@+id/PrincipleDevelopers"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/graph_histogram"
+        android:layout_marginTop="20dp"
+        android:text = "Principle Developers :\r\nOrchisama Das, Mike Smith and Adrien Gaspard"
+        android:textColor = "#FFFFFF"
+        />
+
+
+    <TextView
+        android:id = "@+id/AssistantDevelopers"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/PrincipleDevelopers"
+        android:layout_marginTop="10dp"
+        android:text = "Assisted By :\r\n Emily Marasco and Nicolas Lepine"
+        android:textColor = "#FFFFFF"
+        />
+
+    <TextView
+        android:id = "@+id/Dept"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/AssistantDevelopers"
+        android:layout_marginTop="10dp"
+        android:text = "Electrical And Computer Engineering,\r\nSchulich School of Engineering\r\nUniversity of Calgary, Canada"
+        android:textColor = "#FFFFFF"
+        />
+
+
+
+    <TextView
+        android:id = "@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/Dept"
+        android:layout_marginTop="10dp"
+        android:text = "Email : TheHum@UCalgary.ca"
+        android:textColor = "#FFFFFF"
+        />
+
+
+</RelativeLayout>

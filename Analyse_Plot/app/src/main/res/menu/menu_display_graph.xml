@@ -1,0 +1,74 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.orchisamadas.analyse_plot.DisplayHistogram" >
+
+    <!-- The action bar definitions for the DisplayGraph activity.
+    	Each item is a different option. orderInCategory is defines what
+    	order objects are shown in. showAsAction defines if the item should
+    	be displayed on the action bar or in the overflow menu. -->
+
+    <item
+        android:id="@+id/delete_database"
+        android:orderInCategory="99"
+        android:title="@string/delete_database_string"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/history"
+        android:orderInCategory="52"
+        android:title="@string/history"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id = "@+id/zoomIn"
+        android:orderInCategory="51"
+        android:icon = "@drawable/ic_zoom_in_black_24dp"
+        android:title="Zoom in"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id = "@+id/zoomOut"
+        android:orderInCategory="50"
+        android:icon = "@drawable/ic_zoom_out_black_24dp"
+        android:title="Zoom Out"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/record_data"
+        android:orderInCategory="98"
+        android:title="@string/start_dsp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/show_all"
+        android:orderInCategory="97"
+        android:title="Show total"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/show_FFT"
+        android:orderInCategory="96"
+        android:title="Show FFT"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/show_hist"
+        android:orderInCategory="95"
+        android:title="Show Histogram"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/compare"
+        android:orderInCategory="94"
+        android:title="Compare with"
+        app:showAsAction="never" />
+
+
+</menu>

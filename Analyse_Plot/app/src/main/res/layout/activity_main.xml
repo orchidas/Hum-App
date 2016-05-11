@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id = "@+id/IntroductionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:text = "SOUND RECORDING"
+        android:layout_marginTop ="50dp"
+        android:textSize = "18sp"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+
+
+    <TextView
+        android:id = "@+id/ConsentText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/IntroductionText"
+        android:layout_marginTop = "20dp"
+        android:layout_centerHorizontal = "true"
+        android:text = "@string/consentText1"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+
+    <Button
+        android:id = "@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/ConsentText1"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerVertical = "true"
+        android:text = "@string/TermsAndConditions"
+        android:onClick = "TermsAndConditions"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id = "@+id/ConsentText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/terms"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerVertical = "true"
+        android:text = "@string/consentText2"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+
+
+    <Button
+    android:id = "@+id/buttonAgree"
+    android:layout_below = "@id/ConsentText2"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginTop = "40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick = "StartApp"
+    android:text = "I agree"
+    />
+
+<Button
+    android:id = "@+id/buttonNotAgree"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below = "@id/ConsentText2"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop = "40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text = "I do not agree" />
+
+</RelativeLayout>

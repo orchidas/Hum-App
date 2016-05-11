@@ -1,0 +1,145 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background = "@drawable/dsp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}"  >
+
+    <!--<TextView
+        android:id = "@+id/addComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text = "Comment"
+        />
+
+    <EditText
+        android:id = "@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" /> -->
+
+    <!--<TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop ="100dp"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:text = "Add Comment"
+        /> -->
+
+
+
+
+    <TextView
+        android:id="@+id/remaining_impulses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above ="@id/remaining_impulses"
+        android:layout_marginBottom="17dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageButton
+        android:id = "@+id/playback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerVertical="true"
+        android:layout_above = "@id/textViewTime"
+        android:src = "@drawable/ic_play_arrow_black_24dp"
+        android:visibility = "invisible"/>
+
+    <EditText
+        android:id="@+id/Addcomment"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical ="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentLeft = "true"
+        android:hint = "Comment"
+        android:layout_marginLeft="20dp" />
+
+
+    <ImageButton
+        android:id="@+id/Enter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical ="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"
+        android:layout_marginRight="20dp"
+        android:src ="@drawable/ic_done_black_24dp" />
+
+
+    <ProgressBar
+        android:id="@+id/computation_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical ="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id = "@+id/analysing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above = "@id/computation_progress"
+        android:visibility="invisible"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnDisplayGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@id/computation_progress"
+        android:text="@string/view_fft_result"
+        android:onClick="DisplayGraph"
+        android:visibility="invisible"/>
+
+
+    <Button
+        android:id="@+id/btnDisplayHistogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below = "@id/btnDisplayGraph"
+        android:text="@string/view_analysis_result"
+        android:onClick="DisplayGraph"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

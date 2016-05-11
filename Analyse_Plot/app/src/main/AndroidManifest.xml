@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.orchisamadas.analyse_plot" >
+
+    <!-- Manually added -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MySQLiteDatabaseContract"
+            android:label="@string/title_activity_my_sqlite_database_contract" >
+        </activity>
+        <activity
+            android:name=".MySQLiteDatabaseHelper"
+            android:label="@string/title_activity_my_sqlite_database_helper" >
+        </activity>
+        <activity
+            android:name=".StartDSP"
+            android:label="@string/title_activity_start_dsp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FFTbase"
+            android:label="@string/title_activity_fftbase" >
+        </activity>
+        <activity
+            android:name=".DisplayGraph"
+            android:label="@string/title_activity_display_graph"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".PickHistory"
+            android:label="@string/title_activity_pick_history"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name=".StartApp"
+            android:label="@string/title_activity_start_app" >
+        </activity>
+        <activity
+            android:name=".TermsAndConditions"
+            android:label="@string/title_activity_terms_and_conditions" >
+        </activity>
+    </application>
+
+</manifest>
