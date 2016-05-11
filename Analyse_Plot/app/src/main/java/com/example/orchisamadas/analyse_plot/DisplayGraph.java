@@ -31,14 +31,6 @@ import com.jjoe64.graphview.series.BarGraphSeries;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-/*AChartEngine imports
-import org.achartengine.ChartFactory;
-import org.achartengine.chart.BarChart.Type;
-import org.achartengine.model.XYMultipleSeriesDataset;
-import org.achartengine.model.XYSeries;
-import org.achartengine.renderer.XYMultipleSeriesRenderer;
-import org.achartengine.renderer.XYSeriesRenderer;*/
-
 
 public class DisplayGraph extends ActionBarActivity {
     //if received date is null, current/previous graph is loaded
@@ -167,7 +159,6 @@ public class DisplayGraph extends ActionBarActivity {
             Intent intent = new Intent(this, StartDSP.class);
             startActivity(intent);
             finish();
-
             return true;
         }
 
@@ -176,10 +167,7 @@ public class DisplayGraph extends ActionBarActivity {
         {
             //show all the impulses of current recording
             if(which_button_pressed.equals("1")) {
-                if (SHOW_ALL == "YES")
-                    SHOW_ALL = "NO";
-                else
-                    SHOW_ALL = "YES";
+                SHOW_ALL = SHOW_ALL.equals("YES")?"NO":"YES";
                 loadFFT(RECEIVED_DATE);
             }
             //show histogram of all data recorded so far
@@ -199,6 +187,13 @@ public class DisplayGraph extends ActionBarActivity {
 
         if(id == R.id.show_hist) {
             //on choosing this option, the histogram is displayed
+
+            /*if initially histograms are being compared, then on clicking
+            show histogram button, we want to display the reference histogram,i.e,
+            one corresponding to CURRENT_DATE */
+            if(COMPARE.equals("YES"))
+                RECEVIED_DATE = CURRENT_DATE;
+
             //disable comparison histogram
             COMPARE = "NO";
             //disable show-total
