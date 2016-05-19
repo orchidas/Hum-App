@@ -14,8 +14,8 @@ application was developed during a 3 month internship in University of Calgary t
 </ul>
 <h3 align = "center"> App Screenshots </h3>
 <p align="center">
-  <img src="airport_spectrum.png" width="350"/><h6 align = "center">Frequency Spectrum of noise recorded at airport</h6>
+  <img src="airport_spectrum.png" width="400"/><h6 align = "center">Frequency Spectrum of noise recorded at airport</h6>
 </p>
 <p align = "center">
-  <img src="airportvshome.png" width="350"/><h6 align = "center">Comparison of airport noise with home noise</h6>
+  <img src="airportvshome.png" width="400"/><h6 align = "center">Comparison of airport noise with home noise</h6>
 </p>
