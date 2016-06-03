@@ -73,8 +73,6 @@ for n = 1:32
 end
 
 
-
-
 %calculating PERCENTAGE_WORSE_CASE
 %strongestSignal - freqBandYvals(n,k) < 0.5 * avg deviation of
 %freqBandYvals from strongestSignal
@@ -136,7 +134,7 @@ end
 
 
 %connecting to database
-conn = database.ODBCConnection('dsp_results','root','boscobeat2711');
+conn = database.ODBCConnection('dsp_results','root','analyse_hum');
 if conn == false
     disp('connection unsuccessful');
 else
@@ -217,9 +215,6 @@ curs = exec(conn, query);
 curs = fetch(curs);
 curs.Data(1,:)
 close(curs);
-
-
-
 
 
 %delete table if user says so
