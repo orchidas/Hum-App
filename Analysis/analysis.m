@@ -136,7 +136,8 @@ else
     disp ('connection successful');
 end
 
-sqlquery = 'CREATE TABLE IF NOT EXISTS analysis_data (Name varchar(50), Time varchar(50), Maximum_Signal_Frequency double, Performance_worse_case_Hz double, Ratio_background_noise_Hz double)';
+sqlquery = ['CREATE TABLE IF NOT EXISTS analysis_data (Name varchar(50), Time varchar(50),'...
+' Maximum_Signal_Frequency double, Performance_worse_case_Hz double, Ratio_background_noise_Hz double)'];
 if(exec(conn,sqlquery) == false)
     disp('table not created');
 else
