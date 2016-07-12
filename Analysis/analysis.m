@@ -61,7 +61,6 @@ for n =0:31
     freqBandXvals (n+1,:) = arrayOfFreqAverages(startingPt : startingPt + numPtsInEachBand-1);   
 end
 
-
 %identify strongest signal in each band and average band power
 strongestSignalInBand = zeros(32,1);
 strongestSignalInBand_freq = zeros(32,1);
@@ -80,17 +79,14 @@ meu_strong = mean(sqrt(mean((20*log10(strongestSignal) - freqBandYvals).^2)));
 %threshold = 0.8;
 threshold = 1 - (0.5 * meu_strong)/(20*log10(strongestSignal));
 
-
 Percentage_worse_case = zeros(32,numPtsInEachBand);
  for n =1:32
      for k=1:numPtsInEachBand
-        
          if((freqBandYvals(n,k)/(20*log10(strongestSignal))) >= threshold) 
              Percentage_worse_case(n,k) = freqBandXvals(n,k);
          end
      end
  end
-
 
 %calculating ratio of power across 1/8Hz bandwidth of signal to average band
 %power and finding out the weakest signals
@@ -130,7 +126,6 @@ for n=1:32
         end        
     end
 end
-
 
 
 %connecting to database
